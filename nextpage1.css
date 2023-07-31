@@ -1,0 +1,150 @@
+
+.cloud{
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky.jpg);
+    position: relative;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.city{
+    height: 250px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    display: block;
+    right: 0;
+    top:250px;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400x);
+    }
+}
+
+.road{
+    width: 500%;
+    height: 235px;
+    background-image: url(road.jpg);
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-repeat: repeat-x;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name:roadmov ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes roadmov{
+    100%{transform: translateX(-3400px);}
+}
+
+.flag{
+    width: 130px;
+    z-index: 1;
+    position: absolute;
+    top: 270px;
+    left: 770px;
+}
+
+.car{
+    position: absolute;
+    z-index: 2;
+    top: 440px;
+    left: 610px;
+    width: 390px;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.sun{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 100px;
+    top:80px;
+    animation-name: sunmov;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+@keyframes  sunmov{
+    0%{right: 0; top: 80px;}
+    25%{right: 100px; top: 80px;}
+    50%{right: 500px; top: 80px;}
+    75%{right: 1000px; top:80px}
+    100%{right: 1500px; top:80px;}
+
+    
+}
+
+.wheel1{
+    position: absolute;
+    z-index: 1;
+    top:530px ;
+    left:647.5px ;
+    width:65px ;
+    animation-name: wheelno1;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes wheelno1{
+    0%{transform: rotate(3600deg);}
+}
+
+.wheel2{
+    position: absolute;
+    z-index: 1;
+    top:530px ;
+    left:886.5px ;
+    width:65px ;
+    animation-name: wheelno1;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes wheelno2{
+    0%{transform: rotate(360deg);}
+}
+
+.text{
+    left: 570px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 1rem;
+}
+.text1{
+    background-color: orange;
+    font-size: 40px;
+}
+.text2{
+    background-color: white;
+    font-size: 40px;
+}
+.text3{
+    background-color: green;
+    font-size: 40px;
+}

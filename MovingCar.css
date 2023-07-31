@@ -1,0 +1,123 @@
+body{
+    background-color: chocolate;
+}
+.container{
+    display:inline-block;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items:end ;
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: end;
+}
+
+.main3{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: end;
+}
+
+.main4{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: end;   
+}
+
+.hero1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: no1;
+    
+}
+@keyframes no1{
+  from{transform:skewX(40deg)}
+  to{transform:skewX(-40deg)}
+}
+
+
+.hero2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name:no2 ;
+}
+
+@keyframes no2{
+    0%{transform:skewY(30deg)}
+    100%{transform: skewY(-30deg);}
+   
+  }
+  
+
+.hero3{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-name:no3 ;
+}
+@keyframes no3{
+    0%{transform:rotate(180deg);}
+    
+    
+  }
+
+.hero4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: no4 4s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+@keyframes no4{
+    0%{height: 50px;}
+}
+
+.hero5{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(54, 81, 101);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name:no5 ;
+}
+@keyframes no5{
+    0%{width: 50px;}
+}
+
+.hero6{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(41, 143, 143);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name:no6 ;
+}
+@keyframes no6{
+    0%{transform:rotate(180deg);}
+    50%{transform:rotate(-180deg);}
+}
+a{
+    font-weight: 600;
+    font-size: larger;
+}
